@@ -121,7 +121,8 @@ $(function () {
         $(this).parents('div.alert').addClass('hide');
     });
 
-    $('form[name=IncidentForm] select[name=component_id]').on('change', function () {
+    //This is now handled by vue.js and should be deleted in the future
+    /*$('form[name=IncidentForm] select[name=component_id]').on('change', function () {
         var $option = $(this).find('option:selected');
         var $componentStatus = $('#component-status');
 
@@ -132,7 +133,7 @@ $(function () {
         } else {
             $componentStatus.addClass('hidden');
         }
-    });
+    });*/
 
     // Date picker.
     $('input[rel=datepicker]').datetimepicker({
